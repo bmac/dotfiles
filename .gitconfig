@@ -2,6 +2,7 @@
 
 [alias]
   co = checkout
+  b = branch
   s = status -s
   df = diff --color --color-words --abbrev
   p = push
