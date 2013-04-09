@@ -9,6 +9,12 @@ alias -- -="cd -"
 alias code="cd ~/code"
 alias work="cd ~/work"
 
+# grunt
+alias r="grunt"
+
+alias pd="pushd ."
+alias ppd="popd"
+
 # programs
 alias slt='open -a "Sublime Text 2"'
 # also/or do this:
@@ -58,7 +64,7 @@ alias gl="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(whi
 
 alias grh="git reset --hard"
 alias grs="git reset --soft"
-alias s="git s"
+alias s="git status -sb"
 alias gs="git status"
 alias gp="git pull --rebase"
 
