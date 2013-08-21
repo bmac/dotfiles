@@ -14,6 +14,6 @@ HISTTIMEFORMAT='%F %T '
 export HISTTIMEFORMAT
 
 # Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+# export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 #export PS1='\u@\h:\W$ '
 export PATH="$PATH:/usr/local/share/npm/bin:$HOME/bin:$HOME/.rbenv/bin"
