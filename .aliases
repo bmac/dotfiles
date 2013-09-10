@@ -11,6 +11,7 @@ alias work="cd ~/work"
 
 # grunt
 alias r="grunt"
+alias t="grunt test"
 
 alias pd="pushd ."
 alias ppd="popd"
