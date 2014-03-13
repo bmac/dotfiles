@@ -6,7 +6,7 @@
   s = status -s
   df = diff --color --color-words --abbrev
   p = push
-  up = pull
+  up = "!git remote update -p; git merge --ff-only @{u}"
   # Log display from screencast, with train tracks.
   l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
   # Other useful aliases:
