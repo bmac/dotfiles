@@ -29,14 +29,6 @@ function json() {
 	fi
 }
 
-# get gzipped size
-function gz() {
-	echo "orig size    (bytes): "
-	cat "$1" | wc -c
-	echo "gzipped size (bytes): "
-	gzip -c "$1" | wc -c
-}
-
 # All the dig info
 function digga() {
 	dig +nocmd "$1" any +multiline +noall +answer
