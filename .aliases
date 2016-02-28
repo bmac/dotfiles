@@ -39,7 +39,6 @@ alias gl="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(whi
 alias grh="git reset --hard"
 alias grs="git reset --soft"
 alias s="git status -sb"
-alias gp="git pull --rebase"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
