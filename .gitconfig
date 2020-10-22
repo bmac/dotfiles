@@ -2,27 +2,13 @@
 
 [alias]
   co = checkout
-  b = branch
   s = status -s
   df = diff --color --color-words --abbrev
-  p = push
-  up = "!git remote update -p; git merge --ff-only @{u}"
   # Log display from screencast, with train tracks.
   l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
-  # Other useful aliases:
-  unstage = reset HEAD
-  staged = diff --cached
-  unstaged = diff
   current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
   # Usage: git track origin/feature-123-login-form
-  track = checkout -t
-  ci = commit
-  di = diff
   dc = diff --cached
-  amend = commit --amend
-  aa = add --all
-  pullff = pull --ff-only
-  fa = fetch --all
   pr = "!f() { git fetch -fu ${2:-$(git remote |grep ^upstream || echo origin)} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
   pr-clean = "!git for-each-ref refs/heads/pr/* --format=\"%(refname)\" | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
   spr = "!f() { git fetch -fu ${2:-$(git remote |grep ^upstream || echo origin)} refs/pull-requests/$1/from:pr/$1 && git checkout pr/$1; }; f"
